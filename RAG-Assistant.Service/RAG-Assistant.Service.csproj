@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RAG_Assistant.Service</RootNamespace>
+    <UserSecretsId>e083b0fc-15fb-406a-8a27-4ec9384c4af6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Npgsql" Version="8.2.0" />
+    <PackageReference Include="Microsoft.KernelMemory.Core" Version="0.73.240906.1" />
+    <PackageReference Include="Microsoft.KernelMemory.Service.AspNetCore" Version="0.73.240906.1" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.19.0-alpha" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RAG-Assistant.ServiceDefaults\RAG-Assistant.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>
